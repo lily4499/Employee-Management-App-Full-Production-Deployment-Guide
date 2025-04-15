@@ -21,6 +21,33 @@ This guide walks through deploying a full-stack Employee Management Application 
 ## Step 1: Database Setup (MySQL RDS)
 
 1. Create an RDS MySQL Database from the AWS Console or use Terraform.
+
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_db_instance" "my_database" {
+  identifier           = "source-db"
+  allocated_storage    = 20
+  storage_type         = "gp2"
+  engine               = "mysql"
+  engine_version       = "5.7"
+  instance_class       = "db.t3.micro"
+  username             = "admin"
+  password             = "abc123abc"
+  parameter_group_name = "default.mysql5.7"
+
+  db_name              = "employeedb"  # <--- This is the initial DB name
+
+  skip_final_snapshot  = true
+  publicly_accessible  = true
+}
+
+output "rds_endpoint" {
+  value = aws_db_instance.my_database.endpoint
+}
+
+
 2. Note the following details:
    - **Database Name**
    - **Endpoint**
