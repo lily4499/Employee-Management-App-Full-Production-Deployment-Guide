@@ -1,7 +1,7 @@
 # Employee-Management-App-Full-Production-Deployment-Guide
 
+![image](https://github.com/user-attachments/assets/3dca2dc0-5f78-4678-bb08-223ea11c233c)
 
-Here's a comprehensive and cleanly structured **step-by-step deployment project** in Markdown format. This version uses clear transitions and logical groupings for setting up the database, backend, frontend, HTTPS with Certbot, and application reconfiguration.
 
 ---
 
