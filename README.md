@@ -293,13 +293,6 @@ Save and close the file.
 
 ---
 
-## Optional
-
-- Set up CI/CD for auto-deploy
-- Use environment variables for backend URLs
-- Monitor using Prometheus + Grafana or CloudWatch
-```
-
 ---
 
-Let me know if you'd like this exported as a downloadable `README.md` or pushed into a GitHub repo structure.
+
